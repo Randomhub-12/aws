@@ -1,0 +1,30 @@
+PS -> Initialize a local Ethereum blockchain using Hardhat, generate test accounts, and perform   
+transactions between these accounts. Configure MetaMask to connect to the local network 
+and verify transactions. 
+
+
+npm init -y
+
+npm install --save-dev hardhat@2.22.15
+
+npx hardhat --init  or npx hardhat init
+
+only yes yes yes
+
+npx hardhat node
+
+
+open meta mask 
+
+add network -> rpc url  enter from terminal -> enter all things -> save
+
+
+from 20 account choose any one private key and paste it in meta mask -> add account or wallet paste private key
+
+
+meta mask -> send -> choose random addres form those 20 -> paste it address -> enter amount -> confirm
+
+to check add this account private key in mask 
+
+
+

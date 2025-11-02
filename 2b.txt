@@ -1,0 +1,30 @@
+PS -> Create a local Ethereum network using Hardhat or any other tool, build a smart contract that lets 
+you send a $ (wave) to your contract and keep track of the total # of waves. onnect to any 
+Ethereum wallet. Metamask. Deploy the contract with testnet. Connect your wallet with your 
+web app. Call the deployed contract through your web app. Then store the wave messages from 
+users in arrays using structs. 
+
+
+git clone https://github.com/PrashantPatil10178/BT-2
+
+npm i
+
+npx hardhat node
+
+new terminal ->
+
+npx hardhat run scripts/deploy.js --network localhost
+
+add wallet using one of the account of 20
+
+add -> go network
+
+open index.html
+
+connect wallet
+ 
+change Contract Address -> from terminal -> load artifact
+
+hiii -> send wave -> execute
+
+

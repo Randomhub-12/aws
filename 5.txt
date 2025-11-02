@@ -1,0 +1,49 @@
+PS -> Create a client application that: 
+1. Establishes connectivity to a Hyperledger Fabric blockchain network. 
+2. Manages blockchain identities: 
+• Enrolls an admin user via the Certificate Authority (CA). 
+• Registers application users using admin credentials. 
+3. Facilitates asset operations: 
+• Enrolls an admin user via the Certificate Authority (CA). 
+• Registers application users using admin credentials. 
+
+
+Linux wsl (wsl --install)
+
+git clone https://github.com/PrashantPatil10178/BT-5 
+
+pwd
+
+cd BT-5/
+
+./setup.sh or chmod +x setup.sh 
+
+enter password ( for reset-> Step 1. Open PowerShell
+
+Press Start → type “PowerShell” → right-click → Run as Administrator.
+
+wsl -l -v
+
+wsl -d Ubuntu-24.04 -u root-> O/p root@NAKUL:/#
+
+passwd nakul
+
+exit
+)
+
+setup complete
+
+open docker desktop -> setting -> resources -> wsl -> allow Linux
+
+npm i
+
+npm run dev
+
+
+copy link to browser
+
+new terminal Linux
+
+docker ps -> to show running container
+
+

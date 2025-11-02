@@ -1,0 +1,67 @@
+PS - > Connect to any Ethereum wallet. e.g. MetaMask. Deploy the contract with testnet. Connect wallet 
+with your webapp. Call the deployed contract through your web app. Then store the wave messages from 
+users in arrays using structs. 
+
+
+open metamask
+
+
+open https://remix.ethereum.org/   or   https://remix.ethereum.org/#lang=en&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.30+commit.73712a01.js
+
+
+here in contracts create WavePortal.sol ->> // SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract WavePortal {
+    uint256 totalWaves;
+
+    event NewWave(address indexed from, uint256 timestamp, string message);
+
+    struct Wave {
+        address waver;
+        string message;
+        uint256 timestamp;
+    }
+
+    Wave[] waves;
+
+    constructor() {
+        totalWaves = 0;
+    }
+
+    function wave(string memory _message) public {
+        totalWaves += 1;
+        waves.push(Wave(msg.sender, _message, block.timestamp));
+        emit NewWave(msg.sender, block.timestamp, _message);
+    }
+
+    function getTotalWaves() public view returns (uint256) {
+        return totalWaves;
+    }
+
+    function getAllWaves() public view returns (Wave[] memory) {
+        return waves;
+    }
+}
+
+
+
+compile it
+
+
+
+open -> https://cloud.google.com/application/web3/faucet/ethereum
+
+wallet address same as remix copy from metamask and paste it in Ethereum sepolia faucet
+
+
+come to remix
+
+browser extension -> sepolia testnet
+
+deploy and verify
+
+confirm 
+
+
+
